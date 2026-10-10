@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    color: white;
+}
+
+
+.login-page {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),
+        url("bg-switz.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.register-page {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)),
+        url("bg-switz.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.container {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 20px;
+}
+
+.form-box {
+    width: 100%;
+    max-width: 390px;
+
+    padding: 35px 40px;
+
+    background: rgba(30, 50, 55, 0.30);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 12px;
+
+    backdrop-filter: blur(5px);
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.form-box h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 8px;
+
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.welcome {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 25px;
+
+    text-shadow: 1px 1px 4px black;
+}
+
+
+.input-group {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 6px;
+
+    text-shadow: 1px 1px 3px black;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 11px 13px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+
+    outline: none;
+}
+
+.input-group .password-toggle {
+    position: absolute;
+    top: 29px;
+    right: 10px;
+    width: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 5px;
+    border: 0;
+    background: transparent;
+    color: black;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.input-group .password-toggle:hover {
+    background: transparent;
+    text-decoration: underline;
+}
+
+.password-toggle svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+[data-password-input] {
+    padding-right: 72px;
+}
+
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.input-group input:focus {
+    border-color: white;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.input-group label.error {
+    color: #ffe1e1;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.input-group input.error {
+    border-color: #ffd0d0;
+}
+
+.form-feedback {
+    min-height: 18px;
+    margin-top: 12px;
+    text-align: center;
+    font-size: 13px;
+    text-shadow: 1px 1px 3px black;
+}
+
+.form-feedback:empty {
+    min-height: 0;
+    margin-top: 0;
+}
+
+.form-feedback.error-message {
+    color: #ffe1e1;
+}
+
+.form-feedback.success-message {
+    color: #d8ffd8;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    margin: 8px 2px 18px;
+    font-size: 12px;
+}
+
+.remember {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.remember input {
+    width: auto;
+    margin: 0;
+    accent-color: white;
+}
+
+
+.account-text a {
+    color: white;
+    text-decoration: none;
+}
+
+.account-text a:hover {
+    text-decoration: underline;
+}
+
+
+button {
+    width: 100%;
+    padding: 11px;
+
+    border: none;
+    border-radius: 20px;
+
+    background: white;
+    color: #333;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #eeeeee;
+}
+
+#login-submit {
+    background: #dc3545;
+    color: white;
+}
+
+#login-submit:hover {
+    background: #bb2d3b;
+}
+
+#login-submit:disabled {
+    background: #a94450;
+    cursor: not-allowed;
+}
+
+
+.account-text {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 18px;
+
+    text-shadow: 1px 1px 3px black;
+}
+
+
+.register-box {
+    max-width: 410px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+@media (max-width: 768px) {
+
+    .container {
+        padding: 25px 15px;
+    }
+
+    .form-box {
+        max-width: 380px;
+        padding: 30px;
+    }
+
+    .form-box h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .container {
+        padding: 20px 12px;
+    }
+
+    .form-box {
+        width: 100%;
+        padding: 25px 22px;
+    }
+
+    .form-box h1 {
+        font-size: 25px;
+    }
+
+    .welcome {
+        margin-bottom: 20px;
+    }
+
+    .input-group input {
+        padding: 10px 12px;
+    }
+
+    .input-group .password-toggle {
+        right: 8px;
+    }
+}

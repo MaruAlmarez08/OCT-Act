@@ -1,0 +1,409 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Saira Semi Condensed", sans-serif;
+    color: black;
+    background-color: white;
+}
+
+section {
+    scroll-margin-top: 70px;
+}
+
+.navbar {
+    background-color: white;
+    padding: 18px 0;
+    border-bottom: 1px solid white;
+}
+
+.logo {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: grey;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    min-height: 480px;
+    padding: 60px 0;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.65),
+            rgba(255, 255, 255, 0.65)
+        ),
+        url("backgroundswitzerland.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text {
+    padding: 25px;
+}
+
+.small-text {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+#login-welcome {
+    font-size: 24px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero p:not(.small-text) {
+    max-width: 500px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.main-button {
+    display: inline-block;
+
+    background-color: black;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 11px 22px;
+
+    border-radius: 4px;
+
+    font-size: 14px;
+}
+
+.main-button:hover {
+    background-color: grey;
+    color: white;
+}
+
+.light-button {
+    display: inline-block;
+
+    background-color: white;
+    color: black;
+
+    text-decoration: none;
+
+    padding: 10px 20px;
+
+    border-radius: 4px;
+
+    font-size: 14px;
+}
+
+.light-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.about {
+    min-height: 450px;
+
+    padding: 70px 0;
+
+    color: white;
+
+    background-image:
+        linear-gradient(
+            rgba(20, 40, 45, 0.60),
+            rgba(20, 40, 45, 0.60)
+        ),
+        url("alps.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.about-image {
+    width: 100%;
+    height: 330px;
+
+    object-fit: cover;
+
+    border-radius: 3px;
+}
+
+.about-text {
+    padding: 30px;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.places {
+    padding: 75px 0;
+    background-color: white;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.heading h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.heading p:last-child {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.place-card {
+    height: 100%;
+
+    background-color: white;
+
+    border: 2px solid grey;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+}
+
+.place-card img {
+    width: 100%;
+    height: 210px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.card-body {
+    padding: 22px;
+}
+
+.card-body h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.card-body p {
+    color: grey;
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 65px;
+}
+
+.card-body a {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card-body a:hover {
+    text-decoration: underline;
+}
+
+
+.gallery {
+    min-height: 350px;
+
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.70),
+            rgba(255, 255, 255, 0.70)
+        ),
+        url("geneva.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.gallery h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.gallery-content p:not(.small-text) {
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+
+    padding: 35px 0;
+
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.copyright {
+    color: grey;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .navbar .container {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 45px 0;
+    }
+
+    .hero-text {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p:not(.small-text) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image {
+        margin-top: 25px;
+        height: 280px;
+    }
+
+    .about {
+        padding: 50px 0;
+    }
+
+    .about-text {
+        text-align: center;
+        padding: 25px 10px;
+    }
+
+    .about-text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-image {
+        height: 280px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-image {
+        height: 240px;
+    }
+
+    .about-text h2 {
+        font-size: 29px;
+    }
+
+    .about-image {
+        height: 240px;
+    }
+
+    .heading h2 {
+        font-size: 29px;
+    }
+
+    .gallery h2 {
+        font-size: 29px;
+    }
+
+}
